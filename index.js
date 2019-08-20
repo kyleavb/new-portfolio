@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
 
 // Serve the static files from the React app
@@ -14,12 +13,17 @@ app.get('/api/getList', (req,res) => {
 });
 
 // Handles any requests that don't match the ones above
-app.get('*', (req,res) =>{
-    // res.sendFile(path.join(__dirname+'/client/build/index.html'));
-    res.sendStatus(200);
+app.get('/', (req,res) =>{
+    // res.sendFile(path.join(__dirname+'/react-client/build/index.html'));
+    res.sendFile( path.join(__dirname+'/temp.html') );
 });
 
-const port = process.env.PORT || 5000;
+
+app.get( '*', (req, res) => {
+    res.send('404 Yo.')
+})
+
+const port = process.env.PORT || 8080;
 app.listen(port);
 
 console.log('App is listening on port ' + port);
