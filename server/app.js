@@ -6,11 +6,16 @@ const routes = require('./routes');
 
 // Serve the static files from the React app
 app.use(express.static(path.resolve(__dirname, '../', 'client/build')));
+app.use(express.static(path.resolve(__dirname, '/data')));
 
-app.get('/', (req,res) =>{
-    console.log('req for portfolio')
-    res.sendFile( path.join(__dirname+'/react-client/build/index.html') );
+
+app.get('/data', (req,res) =>{
+    res.sendFile( path.join(__dirname+'/data/data.json') );
 });
+
+app.get('/admin', (req, res) => {
+    res.send('Placeholder for admin login');
+})
 
 app.all( '/*', routes );
 // common 404
