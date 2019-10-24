@@ -7,6 +7,11 @@ const routes = require('./routes');
 // Serve the static files from the React app
 app.use(express.static(path.resolve(__dirname, '../', 'client/build')));
 
+app.get('/', (req,res) =>{
+    console.log('req for portfolio')
+    res.sendFile( path.join(__dirname+'/react-client/build/index.html') );
+});
+
 app.all( '/*', routes );
 // common 404
 app.use( (req, res) => res.status( 404 ).send('Not Found') );
