@@ -6,10 +6,11 @@ const routes = require('./routes');
 
 // Serve the static files from the React app
 app.use(express.static(path.resolve(__dirname, '/data')));
-app.use(express.static(path.resolve(__dirname, '../', 'client/build')));
+app.use(express.static(path.join( __dirname, '../', 'client', 'build')));
 
 app.get('/', ( req, res ) => {
- res.sendFile( path.resolve(__dirname, '../', 'client/build') );
+    console.log('client request');
+    res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'))
 });
 
 app.get('/data', ( req,res ) => {
