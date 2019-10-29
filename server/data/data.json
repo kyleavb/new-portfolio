@@ -2,19 +2,22 @@
     "name" : "Kyle Van Bergen",
     "email" : "kyleavb@gmail.com",
     "linkedIn" : "https://www.linkedin.com/in/kylevanbergen/",
-    "blades" : {
-        "welcome" : {
-            "title" : "Welcome",
-            "welcome" : "Welcome.  Iam Kyle.  You are a person...blah blah"
+    "blades" : [
+        {
+           "title" : "Welcome",
+            "welcome" : "Welcome.  Iam Kyle.  You are a person...blah blah"    
         },
-        "projects" : {
+        {
             "title" : "Projects"
         },
-        "skills" : {
+        {
             "title" : "Skills"
         },
-        "experience" : {
-            "title" : "Experience"
+        {
+            "title" : "Experience" 
+        },
+        {
+            "title" : "Contact Me"
         }
-    }
+    ]
 }

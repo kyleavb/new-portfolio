@@ -8,13 +8,16 @@ const routes = require('./routes');
 app.use(express.static(path.resolve(__dirname, '/data')));
 app.use(express.static(path.resolve(__dirname, '../', 'client/build')));
 
+app.get('/', ( req, res ) => {
+ res.sendFile( path.resolve(__dirname, '../', 'client/build') );
+});
 
-app.get('/data', (req,res) =>{
+app.get('/data', ( req,res ) => {
     console.log('Data request')
     res.sendFile( path.join(__dirname+'/data/data.json') );
 });
 
-app.get('/admin', (req, res) => {
+app.get('/admin', (req, res ) => {
     console.log('Admin Request')
     res.send('Placeholder for admin login');
 })

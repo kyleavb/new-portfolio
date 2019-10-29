@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
+import Blade from './majors/blade'
 import './App.css';
 
-function App() {
-  let state = { data: '' }
+class App extends Component {
+  state = { data: {} }
+  
+  mapBlades(){
+    return this.state.data.blades.map( (blade, i) => (
+      <Blade className="info-blade" data={blade} key={i} />
+    ))
+  }
 
-  axios.get('/data').then( (res) => {
-    this.setState( {data: res.data} );
-  });
-  return (
-    <div className="App">
-      The Stuff
-      {state.data}
-    </div>
-  );
+  componentDidMount() {
+    axios.get('/data').then( (res) => {
+      this.setState( {data: res.data} );
+    });
+  }
+
+  render() {
+    let renderBlades = this.state.data.blades ? this.mapBlades() : '';
+    return (
+      <div className="App">
+        {renderBlades}
+      </div>
+    );
+  }
 }
 
 export default App;
