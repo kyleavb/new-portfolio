@@ -13,6 +13,11 @@ app.get('/', ( req, res ) => {
     res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'))
 });
 
+app.get('/test', ( req, res ) => {
+    console.log('test request');
+    res.sendFile(path.join(__dirname, 'test', 'index.html'))
+});
+
 app.get('/data', ( req,res ) => {
     console.log('Data request')
     res.sendFile( path.join(__dirname+'/data/data.json') );
