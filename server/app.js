@@ -10,8 +10,8 @@ app.use(express.static(path.resolve(__dirname, '/data')));
 
 app.get('/', ( req, res ) => {
     console.log('client request');
-    res.sendStatus(200);
-    // res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'))
+    // res.sendStatus(200);
+    res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'))
 });
 
 app.get('/test', ( req, res ) => {
