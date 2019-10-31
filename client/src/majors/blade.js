@@ -7,7 +7,7 @@ class blade extends Component {
         console.log(this.props)
         return(
             <div className={this.props.className}>
-                {this.props.data.title}
+                <p>{this.props.data.title}</p>
             </div>
         )
     }

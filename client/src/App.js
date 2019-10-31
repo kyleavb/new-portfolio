@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Blade from './majors/blade'
-import './App.css';
+import NavBlock from './majors/NavBlock'
 
 class App extends Component {
   state = { data: {} }
@@ -22,6 +22,7 @@ class App extends Component {
     let renderBlades = this.state.data.blades ? this.mapBlades() : '';
     return (
       <div className="App">
+        <NavBlock />
         {renderBlades}
       </div>
     );

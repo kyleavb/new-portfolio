@@ -1,17 +1,33 @@
-body {
-  background: black;
-}
 
-div{
-  color: white;
+/* 
+  #F8F7FF - White
+  #102542 - Dark dark blue
+  #F87060 - Pop Orange
+  #495867 - Greyish
+  #577399 - Mute blue
+*/
+body {
+  background: #F8F7FF;
+  color: #102542;
+  margin: 0px;
 }
 
 .info-blade{
   height: 66vh;
   width: 100%;
-  margin: 40px 0;
-  border: 1px solid blue;
+  margin: 0 0 40px 0;
+  border: 1px solid #F87060;
 }
+
+.navBox{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background: #577399;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
