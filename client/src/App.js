@@ -8,7 +8,7 @@ class App extends Component {
   
   mapBlades(){
     return this.state.data.blades.map( (blade, i) => (
-      <Blade className="info-blade" data={blade} key={i} />
+      <Blade data={blade} key={i} />
     ))
   }
 
@@ -21,8 +21,8 @@ class App extends Component {
   render() {
     let renderBlades = this.state.data.blades ? this.mapBlades() : '';
     return (
-      <div className="App">
-        <NavBlock />
+      <div className="App Container">
+        <NavBlock links={this.state.data.blades} />
         {renderBlades}
       </div>
     );
