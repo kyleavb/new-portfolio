@@ -13,6 +13,10 @@
                 {
                     "tag": "p",
                     "copy": "My story is simple, I am a simple man that was born on the wild streets of El Dorado.  In my youth I befrended a magical llama named Alex.  That llama would eventually betray me and leave me for dead.  This is my story."
+                },
+                {
+                    "tag": "img",
+                    "source": "https://image.shutterstock.com/z/stock-photo-happy-young-man-in-blue-sweatshirt-on-white-background-winter-season-1502912831.jpg"
                 }
             ]
         },

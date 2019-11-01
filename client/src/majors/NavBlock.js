@@ -15,15 +15,8 @@ class NavBlock extends Component {
 
     navToggle = () => {
         let navMenu = document.getElementsByClassName("navMenu")[0];
-        
 
-        if( this.state.menuToggle ){
-            navMenu.classList.add("change");
-            // linkBar.classList.add("change");
-        }else{
-            navMenu.classList.remove("change");
-            // linkBar.classList.remove("change");
-        }
+        this.state.menuToggle ? navMenu.classList.add("change") : navMenu.classList.remove("change")
         this.setState( {menuToggle: !this.state.menuToggle} );
     }
 
@@ -51,6 +44,7 @@ class NavBlock extends Component {
                         {linkCreate}
                     </ul>
                 </div>
+                {/* <h3>Kyle Van Bergen</h3> */}
             </nav>
             
         )
