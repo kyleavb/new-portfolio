@@ -14,15 +14,15 @@ class NavBlock extends Component {
     }
 
     navToggle = () => {
-        let menuButton = document.getElementsByClassName("menuButton")[0];
-        let linkBar = document.getElementsByClassName("linkBar")[0];
+        let navMenu = document.getElementsByClassName("navMenu")[0];
+        
 
         if( this.state.menuToggle ){
-            menuButton.classList.add("change");
-            linkBar.classList.add("change");
+            navMenu.classList.add("change");
+            // linkBar.classList.add("change");
         }else{
-            menuButton.classList.remove("change");
-            linkBar.classList.remove("change");
+            navMenu.classList.remove("change");
+            // linkBar.classList.remove("change");
         }
         this.setState( {menuToggle: !this.state.menuToggle} );
     }
@@ -39,19 +39,17 @@ class NavBlock extends Component {
         let linkCreate = this.props.links ? this.mapLinks() : '';
  
         return (
-            <nav className="navBar row" ref={ node => this.node = node}>
-                <div className="col-12">
-                    <div className="navMenu">
-                        <div className="menuButton" onClick={this.navToggle}>
-                            <div className="menuBar one"></div>
-                            <div className="menuBar two"></div>
-                            <div className="menuBar three"></div>
-                            <p className="menuText">Menu</p>
-                        </div>
-                        <ul className="linkBar">
-                            {linkCreate}
-                        </ul>
+            <nav className="navBar" ref={ node => this.node = node}>
+                <div className="navMenu">
+                    <div className="menuButton" onClick={this.navToggle}>
+                        <div className="menuBar one"></div>
+                        <div className="menuBar two"></div>
+                        <div className="menuBar three"></div>
+                        <p className="menuText">{this.state.menuToggle ? "Menu" : "Exit"}</p>
                     </div>
+                    <ul className="linkBar">
+                        {linkCreate}
+                    </ul>
                 </div>
             </nav>
             

@@ -7,7 +7,7 @@ class blade extends Component {
 
         return dataArray.map( (contentObj, i) => {
             let elementTag = contentObj['tag'];
-            let formattedEle = ''
+            let formattedEle = '';
             switch (elementTag) {
                 case 'img':
                     console.log('IMAGE');
@@ -18,11 +18,6 @@ class blade extends Component {
             }
             return formattedEle
         });
-
-        // return rawCopy.map( (newComp, i) => {
-        //     let elementTag = Object.keys(newComp)[0];
-        //     return React.createElement(elementTag, {key: i}, newComp[elementTag]);
-        // })
     }
 
     render(){

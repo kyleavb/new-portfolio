@@ -4,27 +4,17 @@
     "linkedIn" : "https://www.linkedin.com/in/kylevanbergen/",
     "blades" : [
         {
-           "link" : "Welcome",
+           "link" : "Top",
             "content" : [
                 {
                     "tag": "h3",
-                    "copy": "Welcome...Iam Kyle" 
+                    "copy": "Welcome...I was Kyle" 
                 },
                 {
                     "tag": "p",
-                    "copy": "My story is simple, I am a simple man that was born on teh wild streets of El Dorado.  In my youth I befrended a magical llama named Alex.  That llama would eventually betray me and leave me for dead.  This is my story."
+                    "copy": "My story is simple, I am a simple man that was born on the wild streets of El Dorado.  In my youth I befrended a magical llama named Alex.  That llama would eventually betray me and leave me for dead.  This is my story."
                 }
             ]
-        },
-        {
-            "link" : "Projects",
-            "content":[
-                {
-                    "tag": "h3",
-                    "copy": "My Projects"
-                }
-            ]
-            
         },
         {
             "link" : "Skills",
@@ -42,6 +32,16 @@
                 {
                     "tag": "h3",
                     "copy": "Field Related Work Experience"
+                }
+            ]
+            
+        },
+        {
+            "link" : "Projects",
+            "content":[
+                {
+                    "tag": "h3",
+                    "copy": "My Projects"
                 }
             ]
             

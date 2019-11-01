@@ -10,7 +10,9 @@
 /* h1,h2,h3,p,span{
   color: #102542;
 } */
-
+.App {
+  padding: 0 5em;
+}
 body {
   background: #F8F7FF;
   color: #102542;
@@ -22,29 +24,42 @@ body {
   width: 100%;
   margin: 0 0 40px 0;
   padding: 60px 0 0 0;
-  text-align: center;
+  /* text-align: center; */
   /* border: 1px solid black; */
+}
+
+.info-blade:first-of-type{
+  /* background: red; */
+  margin-top: 60px;
 }
 
 .navBar{
   position: fixed;
   width: 100%;
-  height: auto;
-  
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: initial;
 }
 
 .navMenu{
   display: flex;
-  justify-content: flex-end;
-  
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: center;  
+  padding: 15px 30px 0px 0px; 
+}
+
+.navMenu.change{
+  background: #F8F7FF;
 }
 
 .menuButton{
   text-align: center;
-  position: absolute;
   display: inline-block;
-  right: 20px;
-  top: 20px;
   cursor: pointer;
   z-index: 100;
 }
@@ -58,6 +73,9 @@ body {
   
 }
 
+.menuButton p{
+  margin: 0 0;
+}
 .menuButton:hover div{
   transform: translateY(-2px)
 }
@@ -68,13 +86,19 @@ body {
 
 .menuText{
   margin-top: -8px;
-  transition: 0.4s;
+  /* transition: 0.4s; */
+  opacity: 1;
+  
+}
+.change .menuText{
+  animation: fade .2s normal;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
 }
 
-.change .menuText{
-  opacity: 0;
-  transform: translateY(10px);
-}
+
 .change .menuBar.one {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-4px, 6px) ;
@@ -90,12 +114,11 @@ body {
 }
 
 .linkBar{
-  top: 20px;
-  position: absolute;
   background-color: #F8F7FF;
-  right: 50px;
   opacity: 0;
   transition: 0.4s;
+  margin: 0;
+  padding: 0;
 }
 
 .linkBar li{
@@ -118,7 +141,7 @@ body {
   text-decoration: underline;
 }
 
-.change.linkBar{
+.change .linkBar{
   opacity: 1;
 }
 
