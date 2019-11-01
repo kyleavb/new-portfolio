@@ -29,9 +29,9 @@ class NavBlock extends Component {
 
     mapLinks = () => {
         return this.props.links.map( (item, i) => (
-            <li key={i}>
-                <a href={`#${item.title}`}>{item.title}</a>
-            </li>
+            <a key={i} href={`#${item.link}`}>
+                <li >{item.link}</li>
+            </a>
         ))  
     }
 

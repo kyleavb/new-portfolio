@@ -4,20 +4,56 @@
     "linkedIn" : "https://www.linkedin.com/in/kylevanbergen/",
     "blades" : [
         {
-           "title" : "Welcome",
-            "welcome" : "Welcome.  Iam Kyle.  You are a person...blah blah"    
+           "link" : "Welcome",
+            "content" : [
+                {
+                    "tag": "h3",
+                    "copy": "Welcome...Iam Kyle" 
+                },
+                {
+                    "tag": "p",
+                    "copy": "My story is simple, I am a simple man that was born on teh wild streets of El Dorado.  In my youth I befrended a magical llama named Alex.  That llama would eventually betray me and leave me for dead.  This is my story."
+                }
+            ]
         },
         {
-            "title" : "Projects"
+            "link" : "Projects",
+            "content":[
+                {
+                    "tag": "h3",
+                    "copy": "My Projects"
+                }
+            ]
+            
         },
         {
-            "title" : "Skills"
+            "link" : "Skills",
+            "content":[
+                {
+                    "tag": "h3",
+                    "copy": "Tech I am familiar with"
+                }
+            ]
+            
         },
         {
-            "title" : "Experience" 
+            "link" : "Experience",
+            "content":[
+                {
+                    "tag": "h3",
+                    "copy": "Field Related Work Experience"
+                }
+            ]
+            
         },
         {
-            "title" : "Contact Me"
+            "link" : "Contact Me",
+            "content":[
+                {
+                    "tag": "h3",
+                    "copy": "Get Ahold of Me"
+                }
+            ]
         }
     ]
 }
