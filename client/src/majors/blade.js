@@ -10,11 +10,11 @@ class blade extends Component {
             let formattedEle = '';
             switch (elementTag) {
                 case 'img':
-                    console.log('IMAGE');
+                    formattedEle = React.createElement(elementTag, { src: contentObj['source'], key:i , alt: contentObj['alt'] ? contentObj['alt'] : 'No Image Alt Text'})
                     break;
             
                 default:
-                    formattedEle = React.createElement(elementTag, {key: i}, contentObj['copy'])
+                    formattedEle = React.createElement(elementTag, { key: i }, contentObj['copy'])
             }
             return formattedEle
         });
