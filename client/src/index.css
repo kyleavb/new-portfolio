@@ -15,24 +15,22 @@ body {
   overflow-y: scroll;
 }
 
-.port{
-  
+.scroll{
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
 }
 
 .info-blade{
-  min-height: 100vh;
+  min-height: calc(100vh);
+  padding: 7em 15%;
   width: 100%;  
-  border: 1px solid black;
   scroll-snap-align: start;
 }
 
 .info-blade p{
   text-indent: 50px;
   margin-top: 20px;
-}
-
-.info-blade:first-of-type{
-  /* margin-top: 60px; */
 }
 
 .navBar{
@@ -148,10 +146,6 @@ body {
 
 .change .linkBar{
   opacity: 1;
-}
-
-.content{
-  margin: 7em 6em;
 }
 
 code {

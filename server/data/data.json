@@ -13,6 +13,10 @@
                 {
                     "tag": "p",
                     "copy": "Outgoing, intellectually-curious web engineer with several years of website/application development expertise acquired in diverse corporate, educational, and creative settings.  Proven history of delivering commercially-successful software releases/apps and applying creative problem-solving skills to conquer complex engineering challenges.  Passionate about system optimization, process improvement, and code quality.  Skilled at interacting with client stakeholders to brainstorm, scope, and clarify project details and requirements—in addition to collaborating with internal teams on project delivery and providing mentoring, training, and support to fellow team members, as needed, to support their ongoing success."
+                },
+                {
+                    "tag": "p",
+                    "copy": "Thank you for visiting. However, at this time I am doing a extensive overhaul of my portfolio, to include a admin panel to really show off my full stack capabilities. Right now, this is pretty bland, please do not judge me on this. You can check the git by inpecting and getting the meta description to the site ;)."
                 }
             ]
         },

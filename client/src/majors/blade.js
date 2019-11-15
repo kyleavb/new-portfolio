@@ -24,9 +24,7 @@ class blade extends Component {
 
         return(
             <section id={`${this.props.data.link}`} className={`info-blade`}>
-                <div className="content">
-                    {this.parseData()}
-                </div>
+                {this.parseData()}
             </section>
         )
     }

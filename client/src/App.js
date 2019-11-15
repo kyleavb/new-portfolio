@@ -22,8 +22,10 @@ class App extends Component {
     let renderBlades = this.state.data.blades ? this.mapBlades() : '';
     return (
       <div className="App Container">
-        {/* <NavBlock links={this.state.data.blades} /> */}
-        {renderBlades}
+        <NavBlock links={this.state.data.blades} />
+        <div className="scroll">
+          {renderBlades}
+        </div>
       </div>
     );
   }
