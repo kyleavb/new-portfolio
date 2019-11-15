@@ -7,26 +7,32 @@
   #577399 - Mute blue
 */
 
-.App {
-  margin: 0 5em;
-}
 body {
   background: #F8F7FF;
   color: #102542;
-  margin: 0px;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.port{
+  
 }
 
 .info-blade{
-  min-height: 66vh;
-  width: 100%;
-  margin: 0 0 40px 0;
-  padding: 60px 0 0 0;
-  /* text-align: center; */
-  /* border: 1px solid black; */
+  min-height: 100vh;
+  width: 100%;  
+  border: 1px solid black;
+  scroll-snap-align: start;
+}
+
+.info-blade p{
+  text-indent: 50px;
+  margin-top: 20px;
 }
 
 .info-blade:first-of-type{
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .navBar{
@@ -142,6 +148,10 @@ body {
 
 .change .linkBar{
   opacity: 1;
+}
+
+.content{
+  margin: 7em 6em;
 }
 
 code {

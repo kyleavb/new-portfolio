@@ -8,15 +8,11 @@
             "content" : [
                 {
                     "tag": "h3",
-                    "copy": "Welcome...I was Kyle" 
+                    "copy": "Hello...I am Kyle" 
                 },
                 {
                     "tag": "p",
-                    "copy": "My story is simple, I am a simple man that was born on the wild streets of El Dorado.  In my youth I befrended a magical llama named Alex.  That llama would eventually betray me and leave me for dead.  This is my story."
-                },
-                {
-                    "tag": "img",
-                    "source": "https://image.shutterstock.com/z/stock-photo-happy-young-man-in-blue-sweatshirt-on-white-background-winter-season-1502912831.jpg"
+                    "copy": "Outgoing, intellectually-curious web engineer with several years of website/application development expertise acquired in diverse corporate, educational, and creative settings.  Proven history of delivering commercially-successful software releases/apps and applying creative problem-solving skills to conquer complex engineering challenges.  Passionate about system optimization, process improvement, and code quality.  Skilled at interacting with client stakeholders to brainstorm, scope, and clarify project details and requirements—in addition to collaborating with internal teams on project delivery and providing mentoring, training, and support to fellow team members, as needed, to support their ongoing success."
                 }
             ]
         },

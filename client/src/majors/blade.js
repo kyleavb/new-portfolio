@@ -23,11 +23,11 @@ class blade extends Component {
     render(){
 
         return(
-            <div id={`${this.props.data.link}`} className={`info-blade`}>
-                <div>
+            <section id={`${this.props.data.link}`} className={`info-blade`}>
+                <div className="content">
                     {this.parseData()}
                 </div>
-            </div>
+            </section>
         )
     }
 }
